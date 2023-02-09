@@ -1,0 +1,19 @@
+.calculator {
+    width: 500px;
+    margin: 0px auto;
+    background-color: rgb(59, 113, 134);
+    padding: 50px;
+}
+.calculator__buttons button{
+    height: 40px;
+    width: 40px;
+    margin-left: 65px;
+}
+.calculator__input {
+    display: flex;
+    justify-content: space-between ;
+}
+.calculator__block {
+}
+.block__number {
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body>
+    <h1>Поиск элемента по ID</h1>
+
+    <!-- <div class="hello__message" id="hello-message"></div>
+
+    <script>
+        var helloMessageElement;
+        var helloMessageId = 'hello-message';
+        helloMessageElement = document.getElementById(helloMessageId);
+        window.alert(helloMessageElement.className);
+        window.alert(helloMessageElement.id);
+    </script> -->
+
+
+    <input value="Omar" class="first__name" id="first-name">
+    <input value="Saaduev" class="last__name" id="last-name">
+    <input value="Kutisha" class="address__name" id="address">
+
+    <select id="cities">
+        <option >Kiev</option>
+        <option selected="selected">Minsk</option>
+        <option >Moscow</option>
+    </select>
+
+    <textarea  id="hobbie">HTML,CSS,JS</textarea>
+
+    <div id="avatar-wrapper">
+        <img id="avatar" src="https://avatars.mds.yandex.net/i?id=0cfb6592827032e411ee78ade525f7929dc394a8-4550718-images-thumbs&n=13" alt="аватарка">
+    </div>
+
+
+
+    <script>
+        var firstNameId = 'first-name';
+        var lastNameId = 'last-name';
+        var addressNameId = 'address';
+        var citiesId = 'cities';
+        var hobbieId = 'hobbie';
+        var avatarWrapperId = 'avatar-wrapper';
+        var avatarId = 'avatar';
+
+        
+        var firstNameEl = document.getElementById(firstNameId);
+        var lastNameEl = document.getElementById(lastNameId);
+        var addressNameEl = document.getElementById(addressNameId);
+        var citiesEL = document.getElementById(citiesId);
+        var hobbieEl = document.getElementById(hobbieId);
+        var avatarWrapperEl = document.getElementById(avatarWrapperId);
+        var avatarEl = document.getElementById(avatarId);
+        
+        
+        // window.alert(firstNameEl.className);
+        // window.alert(lastNameEl.value);
+        // window.alert(addressNameEl.value);
+        // window.alert(citiesEl.value);
+        // window.alert(hobbieEl.value);
+        // window.alert(avatarWrapperEl.innerHTML);
+        // window.alert(hobbieEl.innerHTML);
+        // window.alert(citiesEL.innerHTML);
+        // window.alert(avatarEl.alt);
+        // window.alert(avatarEl.src);
+
+        firstNameEl.value = 'Maga'  ;
+        lastNameEl.setAttribute('value','Musadaev');
+        firstNameEl.className = 'title';
+        // avatarWrapperEl.innerHTML = '<ul><li>1</li></ul>';
+        avatarEl.src = 'https://avatars.mds.yandex.net/i?id=023046c2d14d062d6a56c5c741930a0611b147cf-7755608-images-thumbs&n=13';
+        citiesEL.value = 'Kiev';
+        hobbieEl.value = 'NONE';
+        avatarEl.title = 'Это фото';    
+
+        </script>
+
+        <style>
+            .title{
+                border: red 1px solid;
+            }
+        </style>
+    
+    
+    
+    
+    
+</body>
+</html>
